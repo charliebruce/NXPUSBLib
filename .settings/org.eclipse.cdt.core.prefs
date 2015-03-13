@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.1009932739/PATH/delimiter=;
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.1009932739/PATH/operation=append
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.1009932739/PATH/value=C\:\\eclipse-cpp;C\:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C\:\\Program Files (x86)\\Intel\\iCLS Client\\;C\:\\Program Files\\Intel\\iCLS Client\\;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C\:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C\:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C\:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C\:\\Program Files (x86)\\Git\\cmd;C\:\\Program Files (x86)\\Git\\bin;C\:\\Program Files (x86)\\GNU Tools ARM Embedded\\4.9 2014q4\\bin;C\:\\Program Files (x86)\\GNU ARM Eclipse\\Build Tools\\bin;C\:\\openocd-0.8.0\\bin
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.1009932739/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.1009932739/appendContributed=true
