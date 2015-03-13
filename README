@@ -1,6 +1,8 @@
 nxpUSBlib Library for NXP LPC Microcontrollers with USB
 ==========================================================
 
+These are the USB libraries used on the keyboard. Small fixes/tweaks have been made. 
+
 NXP has been kind enough to provide a pretty good USB library for use with their
 microcontrollers. There are a few showstopper bugs in the current version that
 don't seem to be getting fixed, so I've forked the project here so we can
