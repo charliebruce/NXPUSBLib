@@ -63,8 +63,8 @@ UADEFS =
 # Make does not offer a recursive wildcard function, so here's one:
 rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
 
-SPECIAL_LIBS =../../git/libraries/special/lpc177x_8x/
-GENERAL_LIBS =../../git/libraries/general/
+SPECIAL_LIBS =../lpc177x_8x/
+GENERAL_LIBS =../Libraries/
 
 # List C source files here
 SRC  =  $(call rwildcard,./src/,*.c) \
