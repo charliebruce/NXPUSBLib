@@ -31,7 +31,7 @@ MCU  = cortex-m3 -mcpu=cortex-m3 -mthumb -mthumb-interwork
 
 # List all default C defines here, like -D_DEBUG=1
 #does the usb lib want  -DARCH=ARCH_LPC ??
-DDEFS = -D__LPC177X_8X__=1 -DCORE_M3=1 -D__BUILD_WITH_EXAMPLE__=1
+DDEFS = -D__LPC177X_8X__=1 -DCORE_M3=1 -D__BUILD_WITH_EXAMPLE__=1 -DNO_LIMITED_CONTROLLER_CONNECT=1
 
 # List all default ASM defines here, like -D_DEBUG=1
 DADEFS = 

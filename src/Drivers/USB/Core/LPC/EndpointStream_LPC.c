@@ -63,13 +63,21 @@ uint8_t Endpoint_Write_Stream_LE(const void* const Buffer,
 			                                 uint16_t* const BytesProcessed)
 {
 	uint16_t i;
-
-	while ( !Endpoint_IsINReady() ) /*-- Wait until ready --*/
+	int retries = 0;
+	while ( !Endpoint_IsINReady() && (retries < 50) ) /*-- Wait until ready --*/
 	{
 		//This will be a disaster if this happens!!! TODO THIS IS BAD! LOCKS STUFF UP AT LOW CLOCKSPEEDS? Delay_MS(2);
 		//If the Endpoint goes into a non-ready state for several ms then the stack could overflow
 		//Especially if MIDI clocks are coming fast.
+		retries++;
+
+		volatile int delay = 10000;
+		while(delay)
+			delay--;
 	}
+	if(retries == 50)
+		return ENDPOINT_RWSTREAM_Timeout;
+
 	for(i=0;i<Length;i++)
 	{
 		Endpoint_Write_8(((uint8_t*)Buffer)[i]);
